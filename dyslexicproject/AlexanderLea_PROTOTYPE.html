@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+</head>
+<body>
+<div id="qwertyu">
+    <button class="button" id="default"> Default </button>
+    <input type="checkbox" name="changeStyle" id="dyslexia"> <label for="dyslexia">Dyslexia-friendly</label>
+    <button class="button" id="increaseSize"> Increase Font Size </button>
+    <button class="button" id="decreaseSize"> Decrease Font Size </button>
+	<select class="select" id="pickFontColour" onchange="changeFontColour()">
+		<option style="color: #000000" value="#000000">Font Colour</option> 
+		<option style="color: #000000" value="#000000">Black</option> 
+		<option style="color: #0000FF" value="#0000FF">Blue</option> 
+		<option style="color: #E070D6" value="#E070D6">Fuchsia</option> 
+		<option style="color: #808080" value="#808080">Grey</option> 
+		<option style="color: #00FF00" value="#00FF00">Green</option> 
+		<option style="color: #ed9d2b" value="#ed9d2b">Orange</option> 
+		<option style="color: #FF00FF" value="#FF00FF">Pink</option> 
+		<option style="color: #FF0000" value="#FF0000">Red</option> 
+		<option style="color: #000000" value="#FFFFFF">White</option> 
+	</select>
+	<select class="select" id="pickBGColour" onchange="changeBGColour()">
+		<option style="color: #000000" value="#FFFFFF">Background Colour</option> 
+		<option style="color: #000000" value="#000000">Black</option> 
+		<option style="color: #0000FF" value="#0000FF">Blue</option> 
+		<option style="color: #E070D6" value="#E070D6">Fuchsia</option> 
+		<option style="color: #808080" value="#808080">Grey</option> 
+		<option style="color: #00FF00" value="#00FF00">Green</option> 
+		<option style="color: #ed9d2b" value="#ed9d2b">Orange</option> 
+		<option style="color: #FF00FF" value="#FF00FF">Pink</option> 
+		<option style="color: #FF0000" value="#FF0000">Red</option> 
+		<option style="color: #FFFAFA" value="#FFFAFA">Snow</option> 
+		<option style="color: #000000" value="#FFFFFF">White</option>
+	</select>
+</div>
+
+<div  id="content">
+
+    <h1>Problem Definition</h1>
+
+    <p>
+		People who suffer from dyslexia often struggle to read traditional typefaces. Dyslexia is defined as “any of various reading disorders associated 
+		with impairment of the ability to interpret spatial relationships or to integrate auditory and visual information.” (Dictionary.com, 2012). “10% of the 
+		British population are dyslexic; 4% severely so” (British Dyslexia Association, nd), and within that, “around 25-40% ... experience visual disturbance
+		or discomfort when reading print” (British Dyslexia Association, nd) and the majority of websites do not present information in a manner that helps 
+		those with dyslexia interpret the visual information, and as a result, a significant proportion of the information presented on the internet is not 
+		accessible to sufferers.
+	</p>
+	<p>
+		Furthermore, people with colour blindness, or perhaps other visual impairments often struggle with the black text on a white background standard presentation of information on the internet. For dyslexic readers, the brightness of a pure white background can cause the words to “appear to move around and blur together” (Dyslexia Online Magazine, 2010), further reducing the usability of a significant proportion of websites for those with dyslexia.
+	</p>
+	<p>
+		Text size is also an issue for many readers, not just those with dyslexia, and it can often be uncomfortable for those with any form of visual impairment to read text on a webpage. In addition, websites rarely offer the facility to increase or decrease text size, and doing so within a browser can cause the user to have to scroll horizontally, decreasing the usability of the website – perhaps meaning that in order to read a full sentence, the user would have to scroll horizontally.
+	</p>
+
+	<h1>Conceptual and Theoretical Analysis</h1>
+
+    <p>Many typefaces, such as Times New Roman, are classed as Serif typefaces. A Serif is “A fine line finishing off the main strokes of a letter, as at the top and bottom of M” (Dictionary.com, 2000). These are included purely for the design of the text, and they “tend to obscure the shapes of letters” (Maceri, nd) meaning that the readability of websites – or any written text – is reduced whenever a serif typeface is used. For the 10% of the population with dyslexia, and those with visual impairments, the addition of serifs can make the text illegible and thus the content of the website, in this case, is inaccessible. </p>
+	<p>The typeface used is very important for dyslexic readers, because “dyslexic readers rely on recalling the visual shape of a word due to poor phonological awareness.” (Maceri, nd), and as a result, if the typeface does not represent the user’s mental model of the letter, or word, the meaning is unperceivable. Typefaces such as OpenDyslexic (OpenDyslexic, 2011) have been introduced to try and aid the readability of written text for those with dyslexia. Letters written in OpenDyslexic have “heavy weighted bottoms to add a kind of "gravity" to each letter, helping to keep your brain from rotating them around in ways that can make them look like other letters. Consistently weighted bottoms can also help reinforce the line of text. The unique shapes of each letter can help prevent flipping and swapping.” (OpenDyslexic, 2011) ./p>
+	<p>In addition, dyslexic people may face other issues when visually interpreting written text. The colours of the text and background are important; as aforementioned, For dyslexic readers, the brightness of a pure white background can cause the words to “appear to move around and blur together” (Dyslexia Online Magazine, 2010). Furthermore, low-contrast between the text and background can present the same issue and hinder the readability of the website. The British Dyslexia Association notes that web-designers should “Use dark coloured text on a light (not white) background.” They do, however, also note that, whilst “most users prefer dark print on a pale background, colour preferences [of users] vary”, and thus they can recommend no single colour combination.  (British Dyslexia Association, 2003).</p>
+	<p>Because those with dyslexia face issues with the letters or words blurring or moving, widely spaced print and “Line spacing of 1.5 is preferable” over the standard spacing. (British Dyslexia Association, 2003) </p>
+	
+	<h1>Design</h1>
+	<p>I will therefore design a template of a toolbar that would allow any developer to allow the user to customise the appearance of their website; adding the functionality to change the background colour and font to a commonly used off-white background, off-black text, and a dyslexic-friendly typeface. In addition to this, the user should be able to customise the colours of the foreground and background in order to personalise it and optimise it for the individual user’s preferences. The user should also be able to increase and decrease the size of the text without necessitating horizontal scrolling, and the functionality to do this is included also.</p>
+	<p>The buttons will be organised in line with the gestalt principles of organisation, where buttons with similar functionality are grouped together, in order to fit in with the user’s mental model. The toolbar buttons are placed in a toolbar in order to comply with the law of proximity; the buttons will be perceived to be related because they are seen as grouped. (The Interaction Design Foundation, 1996) </p>
+	<p>The system will offer formative feedback, in the sense that every operation will cause an action that is perceivable to the user. This is in line with Schneiderman’s Eight Golden Rules (University of Washington, nd). Furthermore, the toolbar will allow easy reversal of actions, through the use of toggling, and the manner in which there is always a default button to reset any changed styles. The menu system is small, and thus reduces short-term memory load, and the internal locus of control is in the user’s hands; the users are the initiators of changing the styles, rather than the user responding to the system. </p>
+	
+	<h1>Bibliography</h1>
+	<p>	
+		British Dyslexia Association (n.d.) Eyes and Dyslexia - About Dyslexia- The British Dyslexia Association. [online] Available at: http://www.bdadyslexia.org.uk/about-dyslexia/further-information/eyes-and-dyslexia.html [Accessed: 13 Dec 2012]. </br>
+		British Dyslexia Association (2003) Dyslexia Style Guide- About Dyslexia- The British Dyslexia Association. [online] Available at: http://www.bdadyslexia.org.uk/about-dyslexia/further-information/dyslexia-style-guide.html [Accessed: 13 Dec 2012].</br>
+		Dafont.com (2011) Open-Dyslexic Font | dafont.com. [online] Available at: http://www.dafont.com/open-dyslexic.font [Accessed: 13 Dec 2012].</br>
+		Dictionary.com (2012) the definition of dyslexia. [online] Available at: http://dictionary.reference.com/browse/dyslexia [Accessed: 13 Dec 2012].</br>
+		Dyslexia Online Magazine (2010) Designing web pages for dyslexic readers.. [online] Available at: http://www.dyslexia-parent.com/mag35.html [Accessed: 13 Dec 2012].</br>
+		Maceri, K. (n.d.) Document Design for Users with Reading Disorders. [e-book] Memphis: p.3. Available through: http:\\www.angelfire.com http://www.angelfire.com/tn3/writing/DesignUsersReadDis.pdf.</br>
+		OpenDyslexic (2011) OpenDyslexic. [online] Available at: http://www.dyslexicfonts.com/ [Accessed: 13 Dec 2012].</br>
+		The Interaction Design Foundation (1996) Gestalt principles of form perception. [online] Available at: http://www.interaction-design.org/encyclopedia/gestalt_principles_of_form_perception.html [Accessed: 13 Dec 2012].</br>
+		University of Washington (n.d.) Shneiderman's Eight Golden Rules of Interface Design. [online] Available at: http://faculty.washington.edu/jtenenbg/courses/360/f04/sessions/schneidermanGoldenRules.html [Accessed: 13 Dec 2012].</br>
+	</p>
+	
+   
+
+</div>
+</body>
+</html>
