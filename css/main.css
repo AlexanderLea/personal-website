@@ -1,49 +1,33 @@
-
-
-/* ==========================================================================
-   Page custom styles
-   ========================================================================== */
-
 body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
-            
-/*Styles for sections*/
-
-.site-section{
-	overflow: hidden;
-	padding: 2em 0 6em;
+  background-color: black;
 }
 
-.site-section-even{
-	background-color: #f9f9f9;
-	color: #3B3B3B;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+}
+.box {
+  text-align: center;
 }
 
-.site-section-footer{
+.box .headline {
+  font-weight: 700;
+  font-size: 8em;
+  color: white;
+  font-family: "Dancing Script", cursive;
 
 }
 
-.site-section-odd{
-	background-color: #3B3B3B;
-	color: #f9f9f9;
+.box .contact, .box .contact > a {
+	color: white;
+	text-decoration: none;
+	font-family: 'Piazzolla', serif;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.box .contact > a:hover {
+	color: white;
+	text-decoration: underline;
+}
