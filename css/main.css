@@ -18,16 +18,16 @@ body {
   font-size: 8em;
   color: white;
   font-family: "Dancing Script", cursive;
-
 }
 
-.box .contact, .box .contact > a {
-	color: white;
-	text-decoration: none;
-	font-family: 'Piazzolla', serif;
+.box .contact,
+.box .contact > a {
+  color: white;
+  text-decoration: none;
+  font-family: "Piazzolla", serif;
 }
 
 .box .contact > a:hover {
-	color: white;
-	text-decoration: underline;
+  color: white;
+  text-decoration: underline;
 }
